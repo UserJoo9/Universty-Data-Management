@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="800.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="126.0" prefWidth="800.0" style="-fx-background-color: #CCCBCC;">
+         <children>
+            <ImageView fitHeight="126.0" fitWidth="243.0" layoutX="14.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/dtu-logo-en.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="381.0" layoutY="34.0" prefHeight="58.0" prefWidth="405.0" text="Add New professor Data System" textFill="#616161">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="131.0" layoutY="168.0" prefHeight="23.0" prefWidth="105.0" text="Professeor name" textFill="#616161" />
+      <TextField fx:id="AddProfessorName" layoutX="236.0" layoutY="167.0" promptText="professor name" />
+      <Label layoutX="131.0" layoutY="201.0" prefHeight="23.0" prefWidth="105.0" text="Phone Number" textFill="#616161" />
+      <TextField fx:id="AddProfessorPhone" layoutX="236.0" layoutY="200.0" prefHeight="11.0" prefWidth="149.0" promptText="phone number" />
+      <Label layoutX="131.0" layoutY="233.0" prefHeight="23.0" prefWidth="105.0" text="Salary" textFill="#616161" />
+      <TextField fx:id="AddProfessorSalary" layoutX="236.0" layoutY="232.0" promptText="salary" />
+      <Label layoutX="131.0" layoutY="270.0" prefHeight="23.0" prefWidth="105.0" text="Provide IT" textFill="#616161" />
+      <TextField fx:id="AddProvideIT" layoutX="236.0" layoutY="269.0" prefHeight="11.0" prefWidth="149.0" promptText="true , false" />
+      <Label layoutX="131.0" layoutY="303.0" prefHeight="23.0" prefWidth="105.0" text="Provide Mecha" textFill="#616161" />
+      <TextField fx:id="AddProvideMecha" layoutX="236.0" layoutY="302.0" prefHeight="11.0" prefWidth="149.0" promptText="true , false" />
+      <Label layoutX="131.0" layoutY="338.0" prefHeight="23.0" prefWidth="105.0" text="Provide Auto" textFill="#616161" />
+      <TextField fx:id="AddProvideAuto" layoutX="236.0" layoutY="337.0" promptText="true , false" />
+      <Label layoutX="131.0" layoutY="375.0" prefHeight="23.0" prefWidth="105.0" text="Provide R,Energy" textFill="#616161" />
+      <TextField fx:id="AddProvideREnergy" layoutX="236.0" layoutY="374.0" prefHeight="11.0" prefWidth="149.0" promptText="true , false" />
+      <Button layoutX="40.0" layoutY="489.0" mnemonicParsing="false" onAction="#ProfessorAddData" prefHeight="35.0" prefWidth="169.0" style="-fx-background-color: #CCCBCC;" text="Add" textFill="#616161" />
+      <Button layoutX="232.0" layoutY="489.0" mnemonicParsing="false" onAction="#ProfessorEditData" prefHeight="35.0" prefWidth="169.0" style="-fx-background-color: #CCCBCC;" text="Edit" textFill="#616161" />
+      <Button layoutX="420.0" layoutY="489.0" mnemonicParsing="false" onAction="#ProfessorSearchData" prefHeight="35.0" prefWidth="169.0" style="-fx-background-color: #CCCBCC;" text="Search" textFill="#616161" />
+      <Button layoutX="607.0" layoutY="489.0" mnemonicParsing="false" onAction="#ProfessorDeleteData" prefHeight="35.0" prefWidth="169.0" style="-fx-background-color: #CCCBCC;" text="Delete" textFill="#616161" />
+      <Label layoutX="439.0" layoutY="169.0" prefHeight="23.0" prefWidth="105.0" text="Professeor name" textFill="#616161" />
+      <TextField fx:id="AddProfessorName2" layoutX="544.0" layoutY="168.0" promptText="professor name" />
+      <Label layoutX="439.0" layoutY="202.0" prefHeight="23.0" prefWidth="105.0" text="Phone Number" textFill="#616161" />
+      <TextField fx:id="AddProfessorPhone2" layoutX="544.0" layoutY="201.0" prefHeight="11.0" prefWidth="149.0" promptText="phone number" />
+      <Label layoutX="439.0" layoutY="234.0" prefHeight="23.0" prefWidth="105.0" text="Salary" textFill="#616161" />
+      <TextField fx:id="AddProfessorSalary2" layoutX="544.0" layoutY="233.0" promptText="salary" />
+      <Label layoutX="439.0" layoutY="271.0" prefHeight="23.0" prefWidth="105.0" text="Provide IT" textFill="#616161" />
+      <TextField fx:id="AddProvideIT2" layoutX="544.0" layoutY="270.0" prefHeight="11.0" prefWidth="149.0" promptText="true , false" />
+      <Label layoutX="439.0" layoutY="304.0" prefHeight="23.0" prefWidth="105.0" text="Provide Mecha" textFill="#616161" />
+      <TextField fx:id="AddProvideMecha2" layoutX="544.0" layoutY="303.0" prefHeight="11.0" prefWidth="149.0" promptText="true , false" />
+      <Label layoutX="439.0" layoutY="339.0" prefHeight="23.0" prefWidth="105.0" text="Provide Auto" textFill="#616161" />
+      <TextField fx:id="AddProvideAuto2" layoutX="544.0" layoutY="338.0" promptText="true , false" />
+      <Label layoutX="439.0" layoutY="376.0" prefHeight="23.0" prefWidth="105.0" text="Provide R,Energy" textFill="#616161" />
+      <TextField fx:id="AddProvideREnergy2" layoutX="544.0" layoutY="375.0" prefHeight="11.0" prefWidth="149.0" promptText="true , false" />
+      <Label layoutX="285.0" layoutY="136.0" prefHeight="23.0" prefWidth="52.0" text="Add first" textFill="#616161" />
+      <Label layoutX="583.0" layoutY="136.0" prefHeight="23.0" prefWidth="71.0" text="Seconde edit" textFill="#616161" />
+      <Label fx:id="AddProfessorActionState" layoutX="357.0" layoutY="441.0" textFill="#0dff00" />
+      <Label fx:id="ErrorProfessorActionState" layoutX="337.0" layoutY="433.0" textFill="RED" />
+   </children>
+</AnchorPane>

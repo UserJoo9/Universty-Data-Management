@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="830.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="830.0" style="-fx-background-color: #CCCBCC;">
+         <children>
+            <Label layoutX="501.0" layoutY="19.0" prefHeight="66.0" prefWidth="290.0" text="Modify Student System" textFill="#616161">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/dtu-logo-en.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="AddFullStudentName" layoutX="191.0" layoutY="143.0" prefHeight="35.0" prefWidth="187.0" promptText="full name" />
+      <TextField fx:id="AddStudentPhone" layoutX="191.0" layoutY="237.0" prefHeight="35.0" prefWidth="187.0" promptText="phone number" />
+      <TextField fx:id="AddStudentLevel" layoutX="191.0" layoutY="284.0" prefHeight="35.0" prefWidth="187.0" promptText="level" />
+      <TextField fx:id="AddStudentDepartName" layoutX="191.0" layoutY="193.0" prefHeight="35.0" prefWidth="187.0" promptText="department" />
+      <Label layoutX="85.0" layoutY="143.0" prefHeight="35.0" prefWidth="94.0" text="Full Name" textFill="#616161">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="193.0" prefHeight="35.0" prefWidth="94.0" text="Department" textFill="#616161">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="237.0" prefHeight="35.0" prefWidth="94.0" text="Phone" textFill="#616161">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="284.0" prefHeight="35.0" prefWidth="94.0" text="Level" textFill="#616161">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAddNewStudent" layoutX="95.0" layoutY="491.0" mnemonicParsing="false" onAction="#StudentAddData" prefHeight="35.0" prefWidth="144.0" style="-fx-background-color: #CCCBCC;" text="Add" textFill="#616161" />
+      <Button fx:id="btnEditStudent" layoutX="262.0" layoutY="491.0" mnemonicParsing="false" onAction="#StudentEditData" prefHeight="35.0" prefWidth="144.0" style="-fx-background-color: #CCCBCC;" text="Edit" textFill="#616161" />
+      <Button fx:id="btnSearchStudent" layoutX="424.0" layoutY="491.0" mnemonicParsing="false" onAction="#StudentSearchData" prefHeight="35.0" prefWidth="144.0" style="-fx-background-color: #CCCBCC;" text="Search" textFill="#616161" />
+      <Button fx:id="btnDeleteStudent" layoutX="591.0" layoutY="491.0" mnemonicParsing="false" onAction="#StudentDeleteData" prefHeight="35.0" prefWidth="144.0" style="-fx-background-color: #CCCBCC;" text="Delete" textFill="#616161" />
+      <TextField fx:id="AddFullStudentName2" layoutX="558.0" layoutY="143.0" prefHeight="35.0" prefWidth="187.0" promptText="full name" />
+      <TextField fx:id="AddStudentPhone2" layoutX="558.0" layoutY="237.0" prefHeight="35.0" prefWidth="187.0" promptText="phone number" />
+      <TextField fx:id="AddStudentLevel2" layoutX="558.0" layoutY="284.0" prefHeight="35.0" prefWidth="187.0" promptText="level" />
+      <TextField fx:id="AddStudentDepartName2" layoutX="558.0" layoutY="193.0" prefHeight="35.0" prefWidth="187.0" promptText="department" />
+      <Label layoutX="452.0" layoutY="143.0" prefHeight="35.0" prefWidth="94.0" text="Full Name" textFill="#616161">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="452.0" layoutY="193.0" prefHeight="35.0" prefWidth="94.0" text="Department" textFill="#616161">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="452.0" layoutY="237.0" prefHeight="35.0" prefWidth="94.0" text="Phone" textFill="#616161">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="452.0" layoutY="284.0" prefHeight="35.0" prefWidth="94.0" text="Level" textFill="#616161">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="102.0" prefHeight="35.0" prefWidth="94.0" text="Add First" textFill="#616161">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="108.0" prefHeight="35.0" prefWidth="106.0" text="Second edit" textFill="#616161">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="AddStudentActionState" layoutX="348.0" layoutY="344.0" textFill="#1aff00" />
+      <Label fx:id="ErrorStudentActionState" layoutX="348.0" layoutY="344.0" textFill="RED" />
+      <TextArea fx:id="StudentDataDisplayArea" layoutX="82.0" layoutY="392.0" prefHeight="59.0" prefWidth="666.0" promptText="Data display here">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
