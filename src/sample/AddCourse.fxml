@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="492.0" prefWidth="604.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutX="-4.0" prefHeight="126.0" prefWidth="608.0" style="-fx-background-color: #CCCBCC;">
+         <children>
+            <ImageView fitHeight="107.0" fitWidth="245.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/dtu-logo-en.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="259.0" layoutY="42.0" text="Add New Course Data System" textFill="#616161">
+               <font>
+                  <Font name="Agency FB Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="35.0" layoutY="176.0" text="Course code" textFill="#616161" />
+      <TextField fx:id="AddCourseCode" layoutX="110.0" layoutY="172.0" promptText="Course code" />
+      <Label layoutX="35.0" layoutY="217.0" text="Course name" textFill="#616161" />
+      <TextField fx:id="AddCourseName" layoutX="110.0" layoutY="213.0" promptText="course name" />
+      <Label layoutX="36.0" layoutY="257.0" text="Total Hourse" textFill="#616161" />
+      <TextField fx:id="AddCourseOfficialHours" layoutX="110.0" layoutY="253.0" promptText="official hourse" />
+      <Label layoutX="39.0" layoutY="298.0" text="level" textFill="#616161" />
+      <TextField fx:id="AddCourseLevel" layoutX="110.0" layoutY="294.0" promptText="level , rank" />
+      <Label layoutX="36.0" layoutY="337.0" text="Score" textFill="#616161" />
+      <TextField fx:id="AddCourseScore" layoutX="110.0" layoutY="333.0" promptText="0,150" />
+      <Button layoutX="17.0" layoutY="426.0" mnemonicParsing="false" onAction="#AddCourseData" prefHeight="34.0" prefWidth="136.0" style="-fx-background-color: #CCCBCC;" text="Add" textFill="#616161" />
+      <Button layoutX="161.0" layoutY="426.0" mnemonicParsing="false" onAction="#EditCourseData" prefHeight="34.0" prefWidth="136.0" style="-fx-background-color: #CCCBCC;" text="Edit" textFill="#616161" />
+      <Button layoutX="307.0" layoutY="426.0" mnemonicParsing="false" onAction="#SearchCourseData" prefHeight="34.0" prefWidth="136.0" style="-fx-background-color: #CCCBCC;" text="Search" textFill="#616161" />
+      <Button layoutX="451.0" layoutY="426.0" mnemonicParsing="false" onAction="#DeleteCourseData" prefHeight="34.0" prefWidth="136.0" style="-fx-background-color: #CCCBCC;" text="Delete" textFill="#616161" />
+      <Label layoutX="334.0" layoutY="177.0" text="Course code" textFill="#616161" />
+      <TextField fx:id="AddCourseCode2" layoutX="409.0" layoutY="173.0" promptText="Course code" />
+      <Label layoutX="334.0" layoutY="218.0" text="Course name" textFill="#616161" />
+      <TextField fx:id="AddCourseName2" layoutX="409.0" layoutY="214.0" promptText="course name" />
+      <Label layoutX="335.0" layoutY="258.0" text="Total Hourse" textFill="#616161" />
+      <TextField fx:id="AddCourseOfficialHours2" layoutX="409.0" layoutY="254.0" promptText="official hourse" />
+      <Label layoutX="338.0" layoutY="299.0" text="level" textFill="#616161" />
+      <TextField fx:id="AddCourseLevel2" layoutX="409.0" layoutY="295.0" promptText="level , rank" />
+      <Label layoutX="335.0" layoutY="338.0" text="Score" textFill="#616161" />
+      <TextField fx:id="AddCourseScore2" layoutX="409.0" layoutY="334.0" promptText="0,150" />
+      <Label layoutX="162.0" layoutY="144.0" text="Add first" textFill="#616161" />
+      <Label layoutX="449.0" layoutY="144.0" text="Seconde edit" textFill="#616161" />
+      <Label fx:id="AddCourseActionState" layoutX="229.0" layoutY="387.0" textFill="#00ff15" />
+      <Label fx:id="ErrorCourseActionState" layoutX="229.0" layoutY="379.0" textFill="RED" />
+   </children>
+</AnchorPane>
