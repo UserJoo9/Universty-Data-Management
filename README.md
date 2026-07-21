@@ -1,6 +1,6 @@
 # 🎓 DTU University Data Management System
 
-A desktop application built with JavaFX for managing university data including students, professors, courses, and departments. Developed for **DTU (Dahnhour Technical University)**.
+A desktop application built with JavaFX for managing university data including students, professors, courses, and departments. Developed for **DTU (Delta Technological Universty)**.
 
 ---
 
@@ -283,7 +283,7 @@ dtu
 
 ## 👥 Authors
 
-Developed as a university project for **DTU (Dahnhour Technical University)**.
+Developed as a university project for **DTU (Delta Technological Universty)**.
 
 ---
 
